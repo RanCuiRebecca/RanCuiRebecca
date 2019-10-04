@@ -61,7 +61,7 @@ function checkOutButtonClicked(event){
   if(totalPrice === 0){
     alert("You haven't bought anything")
   }
-  alert('You are all set!')
+  else {alert('You are all set!')}
 }
 
 function addItemToCart(title, price, amount,flavour){

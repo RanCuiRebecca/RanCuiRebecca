@@ -7,12 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" type="text/css" href="./style.css">
     <script src= "./cart.js" async></script>
+  
 </head>
-<body>
+<body onload="window.resizeTo(920,480)">
   <header>
        <a href="./Home.html" id ="BunBunTitle">Bun Bun Bake Shop</a>
        <p id = "tagline"> My heart is in the Cinnamon Roll<span style="float:right;">
-       <a id="cart-link" href="cart.html"><img id="cart" src="./images/cart.png"></a><a id="numCartItems">   [0]</a></span></p>
+       <a id="cart-link" href="cart.html"><img id="cart" src="./images/cart.png"></a><a class="numCartItems"></a></span></p>
  </header>
  <!-- END nav -->
 <!--Address -->
@@ -27,7 +28,7 @@
             <!-- Different  Flavours -->
             <a href="./original.html"><button id="unselected">Original</button></a>
             <a href="./glutenfree.html"><button id="unselected">Gluten-Free</button></a>
-            <a href=".walnut.html"><button id="unselected">Walnut</button></a>
+            <a href="./walnut.html"><button id="unselected">Walnut</button></a>
             <button id="selected">Blackberry</button>
             <a href="./caramelpecan.html"><button id="unselected">Caramel Pecan</button></a>
             <a href="./pumpkinspice.html"><button id="unselected">Pumpkin Spice</button></a>
@@ -44,13 +45,13 @@
         </div>
         <div class="thirdCol">
               <div id="productDetails">
-                  <h2>Blackberry</h2>
-                  <a id="itemPrice">$3.99</a>
+                  <p class = "title">Blackberry</p>
+                  <a class ="itemPrice">$3.99</a>
 
                   <!-- dropdown menu for glaze options -->
                   <div>
                     <label for="flavours" >Glazing</label>
-                    <select id="flavours">
+                    <select class="flavours">
                           <option value="None" id="dropdownButton">None</option>
                           <option value="Sugar-milk" id="dropdownButton">Sugar-milk</option>
                           <option value="Vanilla-milk" id="dropdownButton">Vanilla-milk</option>
@@ -59,22 +60,33 @@
                   <!-- selectors for product quantities -->
                   <p>
                    <label for="quantities">Amount</label>
-                   <select id="quantities">
-                          <option value="quantity">1</option>
-                          <option value="quantity">3</option>
-                          <option value="quantity">6</option>
-                          <option value="quantity">12</option>
+                   <select class="quantities">
+                          <option value="1">1</option>
+                          <option value="3">3</option>
+                          <option value="6">6</option>
+                          <option value="12">12</option>
                       </select>
                   </p>
                   </div>
                   <p>
                   <!-- button to add the item to cart -->
-                      <button id="cartButton">Add to Cart</button>
+                      <button class="cartButton">Add to Cart</button>
                   </p>
                   </div>
                 </div>
                 <div class = "fourthCol">
-                      <h3>MY CART</h3>
+                      <h2>MY CART</h2>
+                      <p class = "catalog">---------Item---------</p>
+                      <div class = "cartItemContainer">
+
+                    </div>
+                      <div class = "totalexpense">
+                      <p class = "totalMoneyTag">Total</p>
+                      <p class = "totalMoney">$0</p>
+                    </div>
+                    <div>
+                      <button class ="checkoutbutton">Check Out</button>
+                    </div>
                 </div>
  </div>
 </body>
