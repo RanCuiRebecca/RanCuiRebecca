@@ -88,7 +88,7 @@ header {
     color: whitesmoke;
   }
 
-#itemPrice{
+.itemPrice, .title{
     font-size: 24px;
     font-weight: bold;
 
@@ -114,11 +114,11 @@ header {
   margin-top:80px;
   text-align: center;
 }
-#quantities{
+.quantities{
   height: 50px;
   font-size: 16px;
   background-color: Peru;
-    margin-left: 10px;
+  margin-left: 10px;
   margin-top: 10px;
 
   }
@@ -133,7 +133,8 @@ header {
     margin-top: 10px;
     }
 
-#flavours{
+.flavours{
+    margin-top: 20px;
     height: 50px;
     font-size: 16px;
     background-color: Peru;
@@ -171,7 +172,7 @@ header {
     background:#fdd7a7;
   }
 
-  #cartButton{
+  .cartButton{
     width:143px;
     height:50px;
     float: right;
@@ -203,29 +204,33 @@ header {
   .firstCol{
   order: 1;
   flex:1;
+  margin: 10px 20px;
   padding: 10px 20px;
-
+  background-color: rgba(255, 255, 255,0.5);
   }
 
   .secondCol{
   order: 2;
-  flex:2;
+  flex:1;
   padding: 10px 20px;
+  margin: 10px 20px;
+  background-color: rgba(255, 255, 255,0.5);
   }
 
   .thirdCol{
   order: 3;
   flex:2;
-  padding: 0px 20px;
-  background-color: rgba(255,255,255,0.4);
-  height:350px;
+  margin: 10px 20px;
+  padding: 10px 20px;
+  background-color: rgba(255, 255, 255,0.5);
   }
 
   .fourthCol{
   order: 4;
-  flex:3;
-  padding: 0px 20px;
-  display:inline;
+  flex:2;
+  margin: 10px 20px;
+  padding: 10px 20px;
+  background-color: rgba(255, 255, 255,0.5);
   }
 .cartItem{
   display: flex;
@@ -252,10 +257,10 @@ header {
   justify-content:flex-start;
 }
 #productImage{
-   box-shadow: 10px 10px rgba(0,0,0,0.2);
+   border-radius: 30px;
 }
 
-#numCartItems{
+.numCartItems{
   margin-right: 20px;
   color: Black;
 }
@@ -318,7 +323,7 @@ header {
     font-size: 20px;
   }
 
-  #checkoutbutton{
+  .checkoutbutton{
     font-size: 20px;
     font-weight: bold;
     color: white;
@@ -329,7 +334,7 @@ header {
     text-align: center;
   }
   body{
-    background-image: url("/Users/rancui/Desktop/BUNBUNBAKE/images/background-roll\ -opacity.png");
+    background-image: url("./images/background-roll\ -opacity.png");
     /* Center and scale the image nicely */
     background-position: center;
     background-repeat: repeat;
