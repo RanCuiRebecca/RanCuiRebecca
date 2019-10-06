@@ -9,12 +9,12 @@
 
 .item{
   flex:1;
-  padding: 20px 1px;
-  width: 420px;
-  height: 350px;
-  justify-content:space-around;
-  margin-bottom:40px
-
+  width: 350px;
+  justify-content:center;
+  border-style: dotted;
+  border-color: Peru;
+  padding:10px;
+  margin:10px
 }
 
 #browse {
@@ -61,7 +61,7 @@ header {
 }
 
 
-#changeaddressbutton{
+.changeaddressbutton{
   margin-left:50px;
   width:143px;
   height:40px;
@@ -118,9 +118,7 @@ header {
   height: 50px;
   font-size: 16px;
   background-color: Peru;
-  margin-left: 10px;
-  margin-top: 10px;
-
+  margin: 10px;
 }
 
 .removeItem{
@@ -228,6 +226,7 @@ header {
 .fourthCol{
   order: 4;
   flex:2;
+  width: 300px;
   margin: 10px 20px;
   padding: 10px 20px;
   background-color: rgba(255, 255, 255,0.5);
@@ -327,10 +326,11 @@ header {
 .checkoutbutton{
   font-size: 20px;
   font-weight: bold;
+justify-content: center;
   color: white;
   background-color: #ffbf00;
   height:50px;
-  width:500px;
+  width:250px;
   float:right;
   text-align: center;
 }

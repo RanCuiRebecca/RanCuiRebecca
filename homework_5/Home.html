@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" type="text/css" href="./style.css">
+  <script src= "./cart.js" async></script>
 </head>
 
 <body>
@@ -12,13 +13,13 @@
   <header>
     <a href="./Home.html" id ="BunBunTitle">Bun Bun Bake Shop</a>
     <p id = "tagline"> My heart is in the Cinnamon Roll<span style="float:right;">
-      <a id="cart-link" href="cart.html"><img id="cart" src="./images/cart.png" alt ="cart"></a><a class="numCartItems"></a></span></p>
+      <a id="cart-link" href="original.html"><img id="cart" src="./images/cart.png" alt ="cart"><a class="numCartItems">0</a></span></p>
     </header>
     <!-- END nav -->
 
     <div class = "changeaddress">
       <label for="changeaddressbutton"  class = "displayaddress" style = "margin-left: 80px; ">Your address is: ........./*not yet this function is not able to use*/
-      <button id="changeaddressbutton" style = "display:inline; color: white; font-size:16px; margin-top: 35px;">Change</button></label>
+      <button class="changeaddressbutton" onclick="location.href = './landing.html';"  style = "display:inline; color: white; font-size:16px; margin-top: 35px;">Change</button></label>
     </div>
 
 
@@ -73,7 +74,7 @@
           </select>
 
           <div class = "buy">
-            <button onclick="location.href = './glutenfree.html';" class="customize" >Customize</button>
+            <button onclick= "location.href = './glutenfree.html';" class="customize" >Customize</button>
             <button class="addtocart">Add to cart</button>
           </div>
         </div>

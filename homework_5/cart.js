@@ -31,6 +31,26 @@ function ready(){
     button.addEventListener('click', checkOutButtonClicked)
   }
 
+  var addToCartHome = document.getElementsByClassName("addtocart")
+  for(var i = 0; i < addToCartHome.length; i++){
+    var button = addToCartHome[i]
+    console.log(button)
+    button.addEventListener('click', addToCartHomeButtonClicked)
+  }
+
+}
+
+function addToCartHomeButtonClicked(event){
+  var totalNo = parseInt(document.getElementsByClassName("numCartItems")[0].innerText)
+  var addItemToCart= event.target.parentElement.parentElement
+  var nameAdded= addItemToCart.getElementsByClassName("pricetag")[0].innerText
+  var amountAdded = parseInt(addItemToCart.getElementsByClassName("amountselect")[0].value)
+  console.log(nameAdded)
+  console.log(amountAdded)
+  totalNo = totalNo + amountAdded
+  document.getElementsByClassName("numCartItems")[0].innerText = totalNo
+  console.log(totalNo)
+  alert("You have added " + amountAdded + " " + nameAdded)
 }
 
 function quantityChange(event){
@@ -71,7 +91,7 @@ function addItemToCart(title, price, amount,flavour){
   var cartItemNames = cartItemContainer.getElementsByClassName('cart-item-title')
   var cartRowContents = `
   <div class = "cartItem">
-  <h4 class = "cart-item-title">${title} (${flavour})</h4>
+  <p class = "cart-item-title">${title} (${flavour})</p>
 
   <select class ="quantities">
   <option value="${amount}">${amount}</option>
@@ -80,7 +100,7 @@ function addItemToCart(title, price, amount,flavour){
   <option value="6">6</option>
   <option value="12">12</option>
   </select>
-  <h4 class = "priceElement">${price}</h4>
+  <p class = "priceElement">${price}</p>
   <div>
   <button class="removeItem">Remove</button>
   </div>
@@ -96,7 +116,6 @@ function addItemToCart(title, price, amount,flavour){
 function updateCartTotal() {
   var cartItemContainer = document.getElementsByClassName("cartItemContainer")[0];
   var cartItems = cartItemContainer.getElementsByClassName("cartItem");
-  var cartItemsQuantity = document.getElementsByClassName("numCartItems")[0].value
   var total = 0;
   for(var i=0;i<cartItems.length;i++){
     var item = cartItems[i];

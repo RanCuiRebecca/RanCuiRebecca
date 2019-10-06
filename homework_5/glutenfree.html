@@ -11,13 +11,12 @@
   <header>
     <a href="./Home.html" id ="BunBunTitle">Bun Bun Bake Shop</a>
     <p id = "tagline"> My heart is in the Cinnamon Roll<span style="float:right;">
-      <a id="cart-link" href="cart.html"><img id="cart" src="./images/cart.png" alt = "cart"></a><a class="numCartItems"></a></span></p>
     </header>
     <!-- END nav -->
     <!--Address -->
     <div class = "changeaddress">
       <label for="changeaddressbutton" style = "margin-left: 80px; margin-top: 80px; text-align: center">Your address is: ........./*not yet this function is not able to use*/
-        <button id="changeaddressbutton" style = "display:inline; color: white; font-size:16px;; text-align: center ; margin-top: 35px;  ">Change</button></label>
+        <button class="changeaddressbutton" onclick="location.href = './landing.html';"  style = "display:inline; color: white; font-size:16px;; text-align: center ; margin-top: 35px;  ">Change</button></label>
       </div>
       <!--End Change Address -->
       <div class="pageBody">
@@ -56,7 +55,7 @@
                 <option value="Double-chocolate" class="dropdownButton">Double-chocolate</option>
               </select>
               <!-- selectors for product quantities -->
-          
+
                 <p>Amount</p>
                 <select class = "quantities">
                   <option value="1">1</option>
