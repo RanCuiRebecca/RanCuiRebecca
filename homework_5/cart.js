@@ -22,7 +22,7 @@ function ready(){
   var quantityInput = document.getElementsByClassName("quantities")
   for(var i = 0; i < quantityInput.length; i++){
     var button = quantityInput[i]
-    button.addEventListener('click', addToCartClicked)
+    button.addEventListener('click', quantityChange)
   }
 
   var checkOutButton = document.getElementsByClassName("checkoutbutton")
@@ -47,9 +47,9 @@ function removeCartItem(event){
 function addToCartClicked(event){
   var button = event.target
   let shopItem = button.parentElement.parentElement
-  var title = document.getElementsByClassName('title')[0].textContent
+  var title = document.getElementsByClassName('title')[0].innerText
   var amount = document.getElementsByClassName('quantities')[0].value
-  var price = document.getElementsByClassName('itemPrice')[0].textContent
+  var price = document.getElementsByClassName('itemPrice')[0].innerText
   var flavours = document.getElementsByClassName('flavours')[0].value
   console.log(title, price,amount,flavours)
   addItemToCart(title, price, amount,flavours)
