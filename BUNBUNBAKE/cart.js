@@ -32,12 +32,7 @@ function ready(){
   }
 
   var address = document.getElementsByClassName("addressinput")[0].innerText
-  localStorage.setItem('inputAddress', address)
-
-  var myAddress = document.getElementsByClassName("displayaddress")[0]
-  for(var i = 0; i < myAddress.length; i++){
-    myAddress[i] = "Your address is: "window.localStorage.getItem('inputAddress');
-  }
+  localStorage.setItem('inputAddress', address
 
 }
 
