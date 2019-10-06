@@ -264,7 +264,7 @@ header {
 .totalMoney{
   font-size: 40px;
   font-family: Skia;
-  margin-left: 200px;
+  margin-left: 150px;
   justify-content: flex-end;
 }
 .totalMoneyTag{
