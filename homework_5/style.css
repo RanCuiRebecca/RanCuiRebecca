@@ -264,7 +264,8 @@ header {
   margin-right: 20px;
   color: Black;
 }
-#addtocart{
+
+.addtocart{
   color: white;
   width: 150px;
   height: 50px;
@@ -272,7 +273,7 @@ header {
   font-size:16px;
 }
 
-#amountselect{
+.amountselect{
 
   font-size:16px;
   width: 50px;
@@ -280,14 +281,14 @@ header {
   background-color: Peru
 }
 
-#flavorselect{
+.flavorselect{
   font-size:16px;
   background-color: Peru;
   height: 50px;
   width: 80px;
 }
 
-#customize{
+.customize{
   color: white;
   background-color: #783312;
   font-size:16px;
@@ -295,7 +296,7 @@ header {
   width: 150px;s
 }
 
-#images{
+.images {
   height: 230px;
   width: 320px;
 }
