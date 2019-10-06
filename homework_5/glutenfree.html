@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <title>BUN BUN BAKE SHOP Gluten-free</title>
-  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" type="text/css" href="./style.css">
   <script src= "./cart.js" async></script>
@@ -12,25 +11,25 @@
   <header>
     <a href="./Home.html" id ="BunBunTitle">Bun Bun Bake Shop</a>
     <p id = "tagline"> My heart is in the Cinnamon Roll<span style="float:right;">
-      <a id="cart-link" href="cart.html"><img id="cart" src="./images/cart.png"></a><a class="numCartItems"></a></span></p>
+      <a id="cart-link" href="cart.html"><img id="cart" src="./images/cart.png" alt = "cart"></a><a class="numCartItems"></a></span></p>
     </header>
     <!-- END nav -->
     <!--Address -->
     <div class = "changeaddress">
-      <label for="change your address" style = "margin-left: 80px; margin-top: 80px; text-algn: center">Your address is: ........./*not yet this function is not able to use*/</label>
-      <button id="changeaddressbutton" style = "display:inline; color: white; font-size:16px;; text-algn: center ; margin-top: 35px;  ">Change</button>
+      <label for="changeaddressbutton" style = "margin-left: 80px; margin-top: 80px; text-algn: center">Your address is: ........./*not yet this function is not able to use*/
+      <button id="changeaddressbutton" style = "display:inline; color: white; font-size:16px;; text-algn: center ; margin-top: 35px;  ">Change</button></label>
     </div>
     <!--End Change Address -->
     <div class="pageBody">
       <!-- split the page into 3 columns -->
       <div class="firstCol">
         <!-- Different  Flavours -->
-        <a href="./original.html"><button id="unselected" >Original</button></a>
-        <button id="selected">Gluten-Free</button>
-        <a href="./walnut.html"><button id="unselected">Walnut</button></a>
-        <a href="./blackberry.html"><button id="unselected">Blackberry</button></a>
-        <a href="./caramelpecan.html"><button id="unselected">Caramel Pecan</button></a>
-        <a href="./pumpkinspice.html"><button id="unselected">Pumpkin Spice</button></a>
+        <a href="./original.html"><button class="unselected" >Original</button></a>
+        <button class="selected">Gluten-Free</button>
+        <a href="./walnut.html"><button class="unselected">Walnut</button></a>
+        <a href="./blackberry.html"><button class="unselected">Blackberry</button></a>
+        <a href="./caramelpecan.html"><button class="unselected">Caramel Pecan</button></a>
+        <a href="./pumpkinspice.html"><button class="unselected">Pumpkin Spice</button></a>
       </div>
 
       <div class="secondCol">
@@ -51,10 +50,10 @@
           <div>
             <label for="flavours" >Glazing</label>
             <select class="flavours">
-              <option value="None" id="dropdownButton">None</option>
-              <option value="Sugar-milk" id="dropdownButton">Sugar-milk</option>
-              <option value="Vanilla-milk" id="dropdownButton">Vanilla-milk</option>
-              <option value="Double-chocolate" id="dropdownButton">Double-chocolate</option>
+              <option value="None" class="dropdownButton">None</option>
+              <option value="Sugar-milk" class="dropdownButton">Sugar-milk</option>
+              <option value="Vanilla-milk" class="dropdownButton">Vanilla-milk</option>
+              <option value="Double-chocolate" class="dropdownButton">Double-chocolate</option>
             </select>
             <!-- selectors for product quantities -->
             <p>

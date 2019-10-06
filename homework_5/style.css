@@ -140,7 +140,7 @@ header {
   background-color: Peru;
 }
 
-#selected{
+.selected{
   margin-left:20px;
   margin-bottom: 10px;
   font-size: 16px;
@@ -152,7 +152,7 @@ header {
   background:#9B9B9B;
 }
 
-#unselected{
+.unselected{
   margin-left:20px;
   margin-bottom:10px;
   font-size: 16px;
@@ -164,7 +164,7 @@ header {
   background:#fdd7a7;
 }
 
-#dropdownButton{
+.dropdownButton{
   margin-top:5px;
   width:143px;
   height:47px;
