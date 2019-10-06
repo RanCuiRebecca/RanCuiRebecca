@@ -1,93 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>BUN BUN BAKE SHOP BLACKBERRY</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" type="text/css" href="./style.css">
-    <script src= "./cart.js" async></script>
+  <meta charset="UTF-8">
+  <title>BUN BUN BAKE SHOP BLACKBERRY</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  <script src= "./cart.js" async></script>
 
 </head>
 <body onload="window.resizeTo(920,480)">
   <header>
-       <a href="./Home.html" id ="BunBunTitle">Bun Bun Bake Shop</a>
-       <p id = "tagline"> My heart is in the Cinnamon Roll<span style="float:right;">
-       <a id="cart-link" href="cart.html"><img id="cart" src="./images/cart.png"></a><a class="numCartItems"></a></span></p>
- </header>
- <!-- END nav -->
-<!--Address -->
-<div class = "changeaddress">
-        <label for="change your address" style = "margin-left: 80px; margin-top: 80px; text-algn: center">Your address is: ........./*not yet this function is not able to use*/</label>
-        <button id="changeaddressbutton" style = "display:inline; color: white; font-size:16px;; text-algn: center ; margin-top: 35px;  ">Change</button>
+    <a href="./Home.html" id ="BunBunTitle">Bun Bun Bake Shop</a>
+    <p id = "tagline"> My heart is in the Cinnamon Roll<span style="float:right;">
+      <a id="cart-link" href="cart.html"><img id="cart" src="./images/cart.png"></a><a class="numCartItems"></a></span></p>
+    </header>
+    <!-- END nav -->
+    <!--Address -->
+    <div class = "changeaddress">
+      <label for="change your address" style = "margin-left: 80px; margin-top: 80px; text-algn: center">Your address is: ........./*not yet this function is not able to use*/</label>
+      <button id="changeaddressbutton" style = "display:inline; color: white; font-size:16px;; text-algn: center ; margin-top: 35px;  ">Change</button>
     </div>
-<!--End Change Address -->
-<div class="pageBody">
-        <!-- split the page into 3 columns -->
-        <div class="firstCol">
-            <!-- Different  Flavours -->
-            <a href="./original.html"><button id="unselected">Original</button></a>
-            <a href="./glutenfree.html"><button id="unselected">Gluten-Free</button></a>
-            <a href="./walnut.html"><button id="unselected">Walnut</button></a>
-            <button id="selected">Blackberry</button>
-            <a href="./caramelpecan.html"><button id="unselected">Caramel Pecan</button></a>
-            <a href="./pumpkinspice.html"><button id="unselected">Pumpkin Spice</button></a>
-        </div>
+    <!--End Change Address -->
+    <div class="pageBody">
+      <!-- split the page into 3 columns -->
+      <div class="firstCol">
+        <!-- Different  Flavours -->
+        <a href="./original.html"><button id="unselected">Original</button></a>
+        <a href="./glutenfree.html"><button id="unselected">Gluten-Free</button></a>
+        <a href="./walnut.html"><button id="unselected">Walnut</button></a>
+        <button id="selected">Blackberry</button>
+        <a href="./caramelpecan.html"><button id="unselected">Caramel Pecan</button></a>
+        <a href="./pumpkinspice.html"><button id="unselected">Pumpkin Spice</button></a>
+      </div>
 
-        <div class="secondCol">
-          <div id="middleProductInfo">
-              <!-- products in the cart including their image, name, price, description, glaze dropdown, quantity options, and add to cart button -->
-              <div id="productImage">
-                  <!-- not proper style to leave out src and alt even though it get replaced on document.ready -->
-                  <img src="./images/image-blackberry.png" alt="Blackberry">
-              </div>
+      <div class="secondCol">
+        <div id="middleProductInfo">
+          <!-- products in the cart including their image, name, price, description, glaze dropdown, quantity options, and add to cart button -->
+          <div id="productImage">
+            <!-- not proper style to leave out src and alt even though it get replaced on document.ready -->
+            <img src="./images/image-blackberry.png" alt="Blackberry">
+          </div>
         </div>
+      </div>
+      <div class="thirdCol">
+        <div id="productDetails">
+          <p class = "title">Blackberry</p>
+          <a class ="itemPrice">$3.99</a>
+
+          <!-- dropdown menu for glaze options -->
+          <div>
+            <label for="flavours" >Glazing</label>
+            <select class="flavours">
+              <option value="None" id="dropdownButton">None</option>
+              <option value="Sugar-milk" id="dropdownButton">Sugar-milk</option>
+              <option value="Vanilla-milk" id="dropdownButton">Vanilla-milk</option>
+              <option value="Double-chocolate" id="dropdownButton">Double-chocolate</option>
+            </select>
+            <!-- selectors for product quantities -->
+            <p>
+              <label for="quantities">Amount</label>
+              <select class="quantities">
+                <option value="1">1</option>
+                <option value="3">3</option>
+                <option value="6">6</option>
+                <option value="12">12</option>
+              </select>
+            </p>
+          </div>
+          <p>
+            <!-- button to add the item to cart -->
+            <button class="cartButton">Add to Cart</button>
+          </p>
         </div>
-        <div class="thirdCol">
-              <div id="productDetails">
-                  <p class = "title">Blackberry</p>
-                  <a class ="itemPrice">$3.99</a>
+      </div>
+      <div class = "fourthCol">
+        <h2>MY CART</h2>
+        <p class = "catalog">---------Item---------</p>
+        <div class = "cartItemContainer">
 
-                  <!-- dropdown menu for glaze options -->
-                  <div>
-                    <label for="flavours" >Glazing</label>
-                    <select class="flavours">
-                          <option value="None" id="dropdownButton">None</option>
-                          <option value="Sugar-milk" id="dropdownButton">Sugar-milk</option>
-                          <option value="Vanilla-milk" id="dropdownButton">Vanilla-milk</option>
-                          <option value="Double-chocolate" id="dropdownButton">Double-chocolate</option>
-                    </select>
-                  <!-- selectors for product quantities -->
-                  <p>
-                   <label for="quantities">Amount</label>
-                   <select class="quantities">
-                          <option value="1">1</option>
-                          <option value="3">3</option>
-                          <option value="6">6</option>
-                          <option value="12">12</option>
-                      </select>
-                  </p>
-                  </div>
-                  <p>
-                  <!-- button to add the item to cart -->
-                      <button class="cartButton">Add to Cart</button>
-                  </p>
-                  </div>
-                </div>
-                <div class = "fourthCol">
-                      <h2>MY CART</h2>
-                      <p class = "catalog">---------Item---------</p>
-                      <div class = "cartItemContainer">
-
-                    </div>
-                      <div class = "totalexpense">
-                      <p class = "totalMoneyTag">Total</p>
-                      <p class = "totalMoney">$0</p>
-                    </div>
-                    <div>
-                      <button class ="checkoutbutton">Check Out</button>
-                    </div>
-                </div>
- </div>
-</body>
-</html>
+        </div>
+        <div class = "totalexpense">
+          <p class = "totalMoneyTag">Total</p>
+          <p class = "totalMoney">$0</p>
+        </div>
+        <div>
+          <button class ="checkoutbutton">Check Out</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  </html>

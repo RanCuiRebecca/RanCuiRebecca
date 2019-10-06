@@ -34,8 +34,8 @@ function ready(){
 }
 
 function quantityChange(event){
-var input = event.target
-updateCartTotal();
+  var input = event.target
+  updateCartTotal();
 }
 
 function removeCartItem(event){
@@ -68,25 +68,25 @@ function checkOutButtonClicked(event){
 function addItemToCart(title, price, amount,flavour){
   var cartItem = document. createElement('div')
   var cartItemContainer = document.getElementsByClassName('cartItemContainer')[0]
-var cartItemNames = cartItemContainer.getElementsByClassName('cart-item-title')
+  var cartItemNames = cartItemContainer.getElementsByClassName('cart-item-title')
   var cartRowContents = `
-            <div class = "cartItem">
-              <h4 class = "cart-item-title">${title} (${flavour})</h4>
+  <div class = "cartItem">
+  <h4 class = "cart-item-title">${title} (${flavour})</h4>
 
-              <select class ="quantities">
-                      <option value="${amount}">${amount}</option>
-                       <option value="1">1</option>
-                       <option value="3">3</option>
-                       <option value="6">6</option>
-                       <option value="12">12</option>
-              </select>
-              <h4 class = "priceElement">${price}</h4>
-              <div>
-              <button class="removeItem">Remove</button>
-            </div>
-            </div>
+  <select class ="quantities">
+  <option value="${amount}">${amount}</option>
+  <option value="1">1</option>
+  <option value="3">3</option>
+  <option value="6">6</option>
+  <option value="12">12</option>
+  </select>
+  <h4 class = "priceElement">${price}</h4>
+  <div>
+  <button class="removeItem">Remove</button>
+  </div>
+  </div>
   `
-          cartItem.innerHTML = cartRowContents
+  cartItem.innerHTML = cartRowContents
 
   cartItemContainer.append(cartItem);
   cartItem.getElementsByClassName("removeItem")[0].addEventListener('click', removeCartItem)
