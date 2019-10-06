@@ -312,7 +312,7 @@ header {
     padding: 15px;
   }
 
-  #addressinput{
+  .addressinput{
     font-size: 16px;
     width: 600px;
     height: 50px;
