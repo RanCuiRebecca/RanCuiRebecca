@@ -15,14 +15,6 @@
   text-align: center;
 }
 
-#cart-link{
-  text-decoration: none;
-  width:1px;
-  height: 10px;
-  margin-right: 10px;
-  background-color: yellow;
-}
-
 #browse {
   color:white;
   padding: 20px;
@@ -290,6 +282,8 @@ header {
 .numCartItems{
   margin-right: 20px;
   color: Black;
+  display: inline;
+  font-size: 20px;
 }
 
 .addtocart{
