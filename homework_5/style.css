@@ -46,13 +46,14 @@
 .pricetag{
   font-weight: bold;
   font-size: 16px;
+  font-family: Skia;
   margin-right: 10px;
   margin-bottom: 10px;
 }
 
 header {
   background-color: rgba(120,51,18,0.5);
-  padding: 20px 0px;
+  padding: 10px;
   text-decoration:none;
   background-size: cover;
   background-position: top;
@@ -80,15 +81,17 @@ header {
 
 #BunBunTitle{
   text-align: left;
-  font-family: serif;
+  font-family: Skia;
   font-weight: bold;
   text-decoration:none;
+  padding-top: 15px;
   margin-left: 20px;
   font-size:35px;
-  color: whitesmoke;
+  color: White;
 }
 
 .itemPrice, .title{
+  font-family: Skia;
   font-size: 24px;
   font-weight: bold;
 
@@ -97,8 +100,8 @@ header {
 #tagline{
   text-decoration: none;
   font-size: 18px;
+  font-family: Skia;
   margin-left: 20px;
-  margin-bottom: 20px;
   color: whitesmoke;
 }
 
@@ -115,42 +118,59 @@ header {
   text-align: center;
 }
 .quantities{
+  font-family: Skia;
   height: 50px;
   font-size: 16px;
   background-color: Peru;
-  margin: 10px;
 }
 
+.quantities2{
+  font-family: Skia;
+  height: 50px;
+  font-size: 16px;
+  margin-top: 5px;
+  background-color: Peru;
+}
+.cart-item-title, .priceElement{
+    font-family: Skia;
+    font-size: 16px;
+    font-weight: bold;
+    padding-left: 10px;
+}
 .removeItem{
   height: 50px;
   border-radius: 5px;
   font-size: 16px;
   float: right;
+  font-family: Skia;
+  margin-top: 5px;
   background-color: rgba(255,0,0,0.8);
   margin-left: 10px;
-  margin-top: 10px;
 }
 
 .flavours{
-  margin-top: 20px;
+  margin-top: 10px;
   height: 50px;
-  font-size: 16px;
+  font-family: Skia;
+  font-size: 18px;
   background-color: Peru;
 }
 
 .selected{
   margin-left:20px;
   margin-bottom: 10px;
+  font-family: Skia;
   font-size: 16px;
   text-decoration: none;
   width:143px;
   height:47px;
   border-radius: 0;
   border-spacing: 10px;
-  background:#9B9B9B;
+  background:#D6AD8A;
 }
 
 .unselected{
+  font-family: Skia;
   margin-left:20px;
   margin-bottom:10px;
   font-size: 16px;
@@ -243,13 +263,13 @@ header {
 }
 .totalMoney{
   font-size: 40px;
-  font-family: serif;
-  margin-left: 400px;
+  font-family: Skia;
+  margin-left: 200px;
   justify-content: flex-end;
 }
 .totalMoneyTag{
   font-size: 40px;
-  font-family: serif;
+  font-family: Skia;
   justify-content: flex-start;
 }
 .divider{
@@ -268,12 +288,13 @@ header {
   color: white;
   width: 150px;
   height: 50px;
+  font-family: Skia;
   background-color: green;
   font-size:16px;
 }
 
 .amountselect{
-
+  font-family: Skia;
   font-size:16px;
   width: 50px;
   height: 50px;
@@ -281,6 +302,7 @@ header {
 }
 
 .flavorselect{
+  font-family: Skia;
   font-size:16px;
   background-color: Peru;
   height: 50px;
@@ -289,6 +311,7 @@ header {
 
 .customize{
   color: white;
+  font-family: Skia;
   background-color: #783312;
   font-size:16px;
   height: 50px;
@@ -321,6 +344,8 @@ header {
 
 .catalog{
   font-size: 20px;
+  font-family: Skia;
+  text-align: center;
 }
 
 .checkoutbutton{
@@ -334,6 +359,17 @@ justify-content: center;
   float:right;
   text-align: center;
 }
+h2{
+  text-align: center;
+  font-family: Skia;
+  font-weight: bold;
+  text-decoration:none;
+  font-size:25px;
+  padding: 10px;
+  color: White;
+  background-color: #D6AD8A;
+  border-style: dotted;
+}
 body{
   background-image: url("./images/background-roll\ -opacity.png");
   /* Center and scale the image nicely */
@@ -341,10 +377,4 @@ body{
   background-repeat: repeat;
   background-size: cover;
 
-}
-
-h4{
-  font-size: 18px;
-  font-weight:500;
-  display:inline-flex;
 }

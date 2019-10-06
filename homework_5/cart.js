@@ -93,7 +93,7 @@ function addItemToCart(title, price, amount,flavour){
   <div class = "cartItem">
   <p class = "cart-item-title">${title} (${flavour})</p>
 
-  <select class ="quantities">
+  <select class ="quantities2">
   <option value="${amount}">${amount}</option>
   <option value="1">1</option>
   <option value="3">3</option>
@@ -110,7 +110,7 @@ function addItemToCart(title, price, amount,flavour){
 
   cartItemContainer.append(cartItem);
   cartItem.getElementsByClassName("removeItem")[0].addEventListener('click', removeCartItem)
-  cartItem.getElementsByClassName('quantities')[0].addEventListener('change', quantityChange)
+  cartItem.getElementsByClassName('quantities2')[0].addEventListener('change', quantityChange)
 }
 
 function updateCartTotal() {
@@ -121,12 +121,12 @@ function updateCartTotal() {
     var item = cartItems[i];
     var priceElement = item.getElementsByClassName('priceElement')[0];
     console.log(priceElement);
-    var quantityElement = item.getElementsByClassName('quantities')[0];
+    var quantityElement = item.getElementsByClassName('quantities2')[0];
     quantity = quantityElement.value
     var price = parseFloat(priceElement.innerText.replace('$',''))
     total = total + (price * quantity);
   }
   total = Math.round(total*100)/100;
+  console.log(total);
   document.getElementsByClassName('totalMoney')[0].innerText = '$'+total;
-
 }
