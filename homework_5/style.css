@@ -1,6 +1,6 @@
 .container{
 
-  padding: 5px,50px,50px,50px;
+  padding: 5px 50px 50px 50px;
   display: flex;
   flex-flow: row wrap;
 }
