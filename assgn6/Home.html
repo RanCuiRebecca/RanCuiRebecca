@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bun Bun Bake shop</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  <script src= "./home.js" async></script>
+</head>
+
+<body>
+
+  <header>
+    <a href="./Home.html" id ="BunBunTitle">Bun Bun Bake Shop</a>
+    <p id = "tagline"> My heart is in the Cinnamon Roll<span style="float:right;">
+      <a id="cart-link" href="cart.html"><img id="cart" src="./images/cart.png" alt ="cart"></a><a class= "numCartItems">0</a></span></p>
+    </header>
+    <!-- END nav -->
+
+    <div class = "changeaddress">
+      <label for="changeaddressbutton"  id="changeaddressHome" class = "displayaddress">Your address is: Apt 000, 5000 Forbes Ave, Tampa, Florida</label>
+      <button class="changeaddressbutton" id="changeaddressbutton"  onclick="location.href = './landing.html';">Change</button>
+    </div>
+
+
+    <div class = "container">
+
+      <div class = "item">
+
+        <a class="images" href="original.html"><img src="./images/image-original.png" alt ="originalcinnamonroll"></a>
+        <div class = "content">
+
+          <p class = "hometitle">Original</p>
+          <p class = "pricetag">$2.99</p>
+          <select class= "amountselect">
+            <option value ="6">6</option>
+            <option value ="1">1</option>
+            <option value="3">3</option>
+            <option value="12">12</option>
+          </select>
+
+
+          <select class= "flavorselect">
+            <option value ="None">None</option>
+            <option value ="Sugar-milk">Sugar-milk</option>
+            <option value="Vanilla-milk">Vanilla-milk</option>
+            <option value="Double-chocolate">Double-chocolate</option>
+          </select>
+
+          <div class = "buy">
+            <button onclick="location.href = './original.html';" class="customize" >Customize</button>
+            <button class="addtocart">Add to cart</button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class = "item">
+        <a class="images" href="./glutenfree.html"><img src="./images/image-glutenfree.png" alt ="glutenfreecinnamonroll"></a>
+        <div class = "content">
+          <p class = "hometitle">GlutenFree</p>
+          <p class = "pricetag">$2.99</p>
+          <select class= "amountselect">
+            <option value ="6">6</option>
+            <option value ="1">1</option>
+            <option value="3">3</option>
+            <option value="12">12</option>
+          </select>
+
+          <select class= "flavorselect">
+            <option value ="None">None</option>
+            <option value ="Sugar-milk">Sugar-milk</option>
+            <option value="Vanilla-milk">Vanilla-milk</option>
+            <option value="Double-chocolate">Double-chocolate</option>
+          </select>
+
+          <div class = "buy">
+            <button onclick= "location.href = './glutenfree.html';" class="customize" >Customize</button>
+            <button class="addtocart">Add to cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class = "item">
+        <a class="images" href="./caramelpecan.html"><img id="image-caramelpecan" src="./images/image-caramelpecan.png" alt ="caramelpecancinnamonroll"></a>
+        <div class = "content">
+          <p class = "hometitle">CaramelPecan</p>
+          <p class = "pricetag">$3.99</p>
+          <select class= "amountselect">
+            <option value ="6">6</option>
+            <option value ="1">1</option>
+            <option value="3">3</option>
+            <option value="12">12</option>
+          </select>
+
+          <select class= "flavorselect">
+            <option value ="None">None</option>
+            <option value ="Sugar-milk">Sugar-milk</option>
+            <option value="Vanilla-milk">Vanilla-milk</option>
+            <option value="Double-chocolate">Double-chocolate</option>
+          </select>
+
+          <div class = "buy">
+            <button onclick="location.href = './caramelpecan.html';" class ="customize" >Customize</button>
+            <button class="addtocart" >Add to cart</button>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class = "item">
+        <a class="images" href="./blackberry.html"><img id="image-blackberry" src="./images/image-blackberry.png" alt ="blackberrycinnamonroll"></a>
+        <div class = "content">
+          <p class = "hometitle">Blackberry</p>
+          <p class = "pricetag">$3.99</p>
+          <select class= "amountselect">
+            <option value ="6">6</option>
+            <option value ="1">1</option>
+            <option value="3">3</option>
+            <option value="12">12</option>
+          </select>
+
+          <select class= "flavorselect">
+            <option value ="None">None</option>
+            <option value ="Sugar-milk">Sugar-milk</option>
+            <option value="Vanilla-milk">Vanilla-milk</option>
+            <option value="Double-chocolate">Double-chocolate</option>
+          </select>
+
+          <div class = "buy">
+            <button onclick="location.href = './blackberry.html';" class ="customize">Customize</button>
+            <button class="addtocart">Add to cart</button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class = "item">
+        <a class="images" href="./pumpkinspice.html"><img id="image-pumpkinspice" src="./images/image-pumpkinspice.png" alt ="pumpkinspicecinnamonroll"></a>
+        <div class = "content">
+          <p class = "hometitle">PumpkinSpice</p>
+          <p class = "pricetag">$3.99</p>
+          <select class= "amountselect">
+            <option value ="6">6</option>
+            <option value ="1">1</option>
+            <option value="3">3</option>
+            <option value="12">12</option>
+          </select>
+
+          <select class= "flavorselect">
+            <option value ="None">None</option>
+            <option value ="Sugar-milk">Sugar-milk</option>
+            <option value="Vanilla-milk">Vanilla-milk</option>
+            <option value="Double-chocolate">Double-chocolate</option>
+          </select>
+
+          <div class = "buy">
+            <button onclick="location.href = './pumpkinspice.html';" class ="customize" >Customize</button>
+            <button class="addtocart" >Add to cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class = "item">
+        <a class="images" href="./walnut.html"><img id="image-walnut" src="./images/image-walnutcinnamon.png" alt ="walnutcinnamonroll"></a>
+        <div class = "content">
+          <p class = "hometitle">Walnut</p>
+          <p class = "pricetag">$3.99</p>
+          <select class= "amountselect">
+            <option value ="6">6</option>
+            <option value ="1">1</option>
+            <option value="3">3</option>
+            <option value="12">12</option>
+          </select>
+
+          <select class= "flavorselect">
+            <option value ="None">None</option>
+            <option value ="Sugar-milk">Sugar-milk</option>
+            <option value="Vanilla-milk">Vanilla-milk</option>
+            <option value="Double-chocolate">Double-chocolate</option>
+          </select>
+
+          <div class = "buy">
+            <button onclick="location.href = './walnut.html';" class ="customize">Customize</button>
+            <button class="addtocart">Add to cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  </html>
