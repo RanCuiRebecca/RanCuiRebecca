@@ -108,7 +108,7 @@ function quantityChange(event){
   var flavour = item.getElementsByClassName('flavorCartSelect')[0].innerText
   var priceElement = item.getElementsByClassName('cartItemPrice')[0];
   var quantity = item.getElementsByClassName('amountCartSelect')[0].value;
-  var img = document.querySelector('img').src
+  var img = item.querySelector('img').src
 
   updateCartPage();
   console.log(flavour)
