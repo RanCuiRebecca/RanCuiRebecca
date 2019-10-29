@@ -59,7 +59,7 @@ function getFromLocalStorage(){
       var subPrice = Math.round(myItems[i].itemNo * priceValue*100)/100
       cartItem.innerHTML  = `
       <div class = "item1">
-      <a class="cartimages"><img src="${myItems[i].itemImg}" alt ="img"></a>
+      <!-- <a class="cartimages"><img src="${myItems[i].itemImg}" alt ="img"></a> -->
         <div class = "section">
           <p class ="cartItemName">${myItems[i].itemName}</p>
           <p class ="flavorCartSelect">${myItems[i].itemFlavours}</p>
@@ -108,7 +108,7 @@ function quantityChange(event){
   var flavour = item.getElementsByClassName('flavorCartSelect')[0].innerText
   var priceElement = item.getElementsByClassName('cartItemPrice')[0];
   var quantity = item.getElementsByClassName('amountCartSelect')[0].value;
-  var img = item.querySelector('img').src
+  // var img = item.querySelector('img').src
 
   updateCartPage();
   console.log(flavour)
@@ -126,7 +126,7 @@ function quantityChange(event){
       itemNo: quantity,
       itemPrice: priceElement.innerText,
       itemFlavours: flavour,
-      itemImg: img
+      // itemImg: img
   };
 
   removeFromLocalStorage(item, name, flavour)
@@ -178,7 +178,7 @@ function addItemToCart(){
 
     cartItem.innerHTML = `
     <div class = "item1">
-    <a class="cartimages"><img src="${thisItem.itemImg}" alt ="img"></a>
+    <!-- <a class="cartimages"><img src="${thisItem.itemImg}" alt ="img"></a> -->
       <div class = "section">
         <p class ="cartItemName">${thisItem.itemName}</p>
         <p class ="flavorCartSelect">${thisItem.itemFlavours}</p>
