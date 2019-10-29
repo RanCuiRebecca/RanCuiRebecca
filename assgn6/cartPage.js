@@ -68,8 +68,8 @@ function getFromLocalStorage(){
         </div>
         <select class= "amountCartSelect">
           <option value="${myItems[i].itemNo}">${myItems[i].itemNo}</option>
-          <option value ="3">3</option>
           <option value ="1">1</option>
+          <option value ="3">3</option>
           <option value="6">6</option>
           <option value="12">12</option>
         </select>
@@ -187,8 +187,8 @@ function addItemToCart(){
       </div>
       <select class= "amountCartSelect">
         <option value="${thisItem.itemNo}">${thisItem.itemNo}</option>
-        <option value ="3">3</option>
         <option value ="1">1</option>
+        <option value ="3">3</option>
         <option value="6">6</option>
         <option value="12">12</option>
       </select>
