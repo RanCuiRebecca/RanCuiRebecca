@@ -23,7 +23,7 @@
 			</header>
 			<div class="fullrow color-1" >
 				<h2 class="content__title">User Interface Design Patterns</h2>
-				<ul id="stack_UIdesignpatterns" class="stack stack--eka">
+				<ul id="stack_UIdesignpatterns2" class="stack stack--eka">
 					<!-- getting input -->
 					<li class="stack__item"><img src="img/smallcard/Getting Input.png" alt="Input" /></li>
 					<!-- form -->
@@ -67,8 +67,8 @@
 					<li class="stack__item"><img src="img/smallcard/Good3.png" alt="Good3" /></li>
 				</ul>
 				<div class="controls">
-					<button class="button button--sonar button--reject" data-stack="stack_UIdesignpatterns"><i class="fa fa-times"></i><span class="text-hidden">Reject</span></button>
-					<button class="button button--sonar button--accept" data-stack="stack_UIdesignpatterns"><i class="fa fa-check"></i><span class="text-hidden">Accept</span></button>
+					<button class="button button--sonar button--reject" data-stack="stack_UIdesignpatterns2"><i class="fa fa-times"></i><span class="text-hidden">Reject</span></button>
+					<button class="button button--sonar button--accept" data-stack="stack_UIdesignpatterns2"><i class="fa fa-check"></i><span class="text-hidden">Accept</span></button>
 				</div>
 					<p></p>
 				<div class="back">
@@ -97,9 +97,7 @@
 
 	<!-- /container -->
 		<script src="js/classie.js"></script>
-		<!--
-		click feedback effect : see more at http://tympanus.net/codrops/2015/02/11/subtle-click-feedback-effects/
-		-->
+	
 		<script>
 			// http://stackoverflow.com/a/11381730/989439
 			function mobilecheck() {
@@ -174,7 +172,7 @@
 					return nextSibling;
 				}
 
-				var eka = new Stack(document.getElementById('stack_UIdesignpatterns'), {
+				var eka = new Stack(document.getElementById('stack_UIdesignpatterns2'), {
 						stackItemsAnimation : {
 							duration: 800,
 							type: dynamics.spring
@@ -187,8 +185,8 @@
 					bttn.setAttribute('data-state', 'unlocked');
 				};
 
-				document.querySelector('.button--accept[data-stack = stack_UIdesignpatterns]').addEventListener(clickeventtype, function() { eka.accept(buttonClickCallback.bind(this)); });
-				document.querySelector('.button--reject[data-stack = stack_UIdesignpatterns]').addEventListener(clickeventtype, function() { eka.reject(buttonClickCallback.bind(this)); });
+				document.querySelector('.button--accept[data-stack = stack_UIdesignpatterns2]').addEventListener(clickeventtype, function() { eka.accept(buttonClickCallback.bind(this)); });
+				document.querySelector('.button--reject[data-stack = stack_UIdesignpatterns2]').addEventListener(clickeventtype, function() { eka.reject(buttonClickCallback.bind(this)); });
 
 
 				[].slice.call(document.querySelectorAll('.button--sonar')).forEach(function(bttn) {
