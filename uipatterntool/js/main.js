@@ -1,3 +1,13 @@
+/**
+ * main.js
+ * http://www.codrops.com
+ *
+ * Licensed under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ *
+ * Copyright 2015, Codrops
+ * http://www.codrops.com
+ */
 ;(function(window) {
 
 	'use strict';
@@ -22,7 +32,7 @@
 		};
 
 	function extend( a, b ) {
-		for( var key in b ) { 
+		for( var key in b ) {
 			if( b.hasOwnProperty( key ) ) {
 				a[key] = b[key];
 			}
@@ -51,9 +61,20 @@
 		// number of visible items in the stack
 		visible : 3,
 		// infinite navigation
-		infinite : true,
+		infinite : false,
 		// callback: when reaching the end of the stack
-		onEndStack : function() {return false;},
+
+		onEndStack : function() {
+      var ItemContainer = document.getElementsByClassName('controls')[0]
+      console.log(ItemContainer);
+      var seeFalsePatterns = document.createElement('div');
+      // ItemContainer.innerHTML = `
+      //   <a href = "./allcardsyellow.html" class="seeallpatterns"><strong>Patterns I don't knows</strong></a>
+      // `
+      // return false;
+      ItemContainer.innerHTML = `<a href = "./bluereinforce.html" class="dontknowButton"><strong>Patterns I don't knows</strong></a>`
+      // ItemContainer.appendChild(seeFalsePatterns);
+    },
 		// animation settings for the items' movements in the stack when the items rearrange
 		// object that is passed to the dynamicsjs animate function (see more at http://dynamicsjs.com/)
 		// example:
@@ -71,17 +92,17 @@
 		stackItemsPreAnimation : {
 			reject : {
 				// if true, then the settings.properties parameter will be distributed through the items in a non equal fashion
-				// for instance, if we set settings.properties = {translateX:100} and we have options.visible = 4, 
+				// for instance, if we set settings.properties = {translateX:100} and we have options.visible = 4,
 				// then the second item in the stack will translate 100px, the second one 75px and the third 50px
 				elastic : true,
 				// object that is passed into the dynamicsjs animate function - second parameter -  (see more at http://dynamicsjs.com/)
 				animationProperties : {},
 				// object that is passed into the dynamicsjs animate function - third parameter - (see more at http://dynamicsjs.com/)
-				animationSettings : {} 
+				animationSettings : {}
 			},
 			accept : {
 				// if true, then the settings.properties parameter will be distributed through the items in a non equal fashion
-				// for instance, if we set settings.properties = {translateX:100} and we have options.visible = 4, 
+				// for instance, if we set settings.properties = {translateX:100} and we have options.visible = 4,
 				// then the second item on the stack will translate 100px, the second one 75px and the third 50px
 				elastic : true,
 				// object that is passed into the dynamicsjs animate function - second parameter -  (see more at http://dynamicsjs.com/)
@@ -157,7 +178,7 @@
 			self.isAnimating = false;
 
 			if( callback ) callback();
-			
+
 			if( !self.options.infinite && self.current === 0 ) {
 				self.hasEnded = true;
 				// callback
@@ -183,7 +204,7 @@
 					item.style.pointerEvents = 'auto';
 					item.style.opacity = 1;
 					item.style.zIndex = parseInt(self.options.visible - i);
-					
+
 					dynamics.animate(item, {
 						translateZ : parseInt(-1 * 50 * i)
 					}, self.options.stackItemsAnimation);
@@ -196,11 +217,11 @@
 					if( self.options.stackItemsPreAnimation ) {
 						preAnimation = action === 'accept' ? self.options.stackItemsPreAnimation.accept : self.options.stackItemsPreAnimation.reject;
 					}
-					
+
 					if( preAnimation ) {
 						// items "pre animation" properties
 						var animProps = {};
-						
+
 						for (var key in preAnimation.animationProperties) {
 							var interval = preAnimation.elastic ? preAnimation.animationProperties[key]/self.options.visible : 0;
 							animProps[key] = preAnimation.animationProperties[key] - Number(i*interval);
@@ -212,7 +233,7 @@
 						preAnimation.animationSettings.complete = function() {
 							animateStackItems(item, i);
 						};
-						
+
 						dynamics.animate(item, animProps, preAnimation.animationSettings);
 					}
 					else {
