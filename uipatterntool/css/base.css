@@ -207,15 +207,13 @@ a:focus {
 }
 
 .content {
-	background-color: var(--color-bg-content);
 	position: fixed;
-	height: 100vh;
+	height: 100%;
 	width: 100%;
-	display: flex;
+	display: inline;
 	align-items: center;
 	justify-content: center;
 	background-position: 50% 30%;
-	background-size: cover;
 	/* background-blend-mode: soft-light; */
 	cursor: pointer;
 }
