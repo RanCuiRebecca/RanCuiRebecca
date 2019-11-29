@@ -50,16 +50,34 @@ button:focus {
 }
 
 .reviewitem{
-	margin: 40px 20px;
+	margin: 10px 10px;
 	opacity: 0.8;
 	flex:1;
 	align-items: flex-start;
-	height: 200px;
-	width: 200px;
-	max-width: 350px;
+	height: 150px;
+	width: 150px;
 }
 
 .reviewitem:hover{
+	opacity: 1.0;
+	/* padding: 4px; */
+	/* background-color: white; */
+	-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.25);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.25);
+box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.25);
+}
+
+
+.allitem{
+	margin: 10px 10px;
+	opacity: 0.8;
+	flex:1;
+	align-items: flex-start;
+	height: 100px;
+	width: 100px;
+}
+
+.allitem:hover{
 	opacity: 1.0;
 	/* padding: 4px; */
 	/* background-color: white; */
