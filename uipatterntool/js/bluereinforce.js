@@ -7,12 +7,19 @@ if(document.readyState == 'loading'){
 function ready(){
 
   var bluepartLS = getItemsFromStorage();
+
   var bluereinforcepart = document.getElementsByClassName("column")[0];
+
+
   console.log(bluereinforcepart);
   for(var i = 0; i < bluepartLS.length; i++){
     var newItem = document.createElement('div');
+    console.log("functional Location:   " + bluepartLS[i].imageLink);
     newItem.innerHTML  = `
-    <div><img class="listitem" src="${bluepartLS[i]}"/></div>
+    <!-- <script>
+    bluepartLS[i].imageLink;
+    </script> -->
+    <div onclick = ${bluepartLS[i].imageLink}><img class="reviewitem" src="${bluepartLS[i].imageSrc}"/></div>
     `;
     bluereinforcepart.appendChild(newItem);
   }

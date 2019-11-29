@@ -123,6 +123,7 @@
             // totla number of grid items
             this.itemsTotal = this.DOM.items.length;
             // The content element ("behind" the grid)
+            console.log(this.itemsTotal);
             this.DOM.content = document.querySelector('.content');
             this.DOM.contentTitle = this.DOM.content.querySelector('.content__title');
             // Calculate heights of both the grid wrap and the grid, and also:

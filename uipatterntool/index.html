@@ -7,9 +7,13 @@
 		<title>UI Patterns Learning Tool | Ran Cui</title>
 		<link rel="shortcut icon" href="ran-icon.ico">
 		<!-- <link rel="stylesheet" type="text/css" href="css/normalize.css" /> -->
+		<!-- animsition.css -->
+		<link rel="stylesheet" href="./dist/css/animsition.css">
 		<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css" />
 		<link rel="stylesheet" type="text/css" href="css/demo.css" />
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="./dist/js/animsition.min.js"></script>
 		<script src="js/modernizr-custom.js"></script>
 	</head>
 	<body>
@@ -20,15 +24,37 @@
 
 		<div id = "homepage" class="container transition-fade">
 
-					<header class="header color-0">
-						<div class="codrops-links">
+					<header class = "fullrow" style= "padding: 0.5em 0.5em">
+						<h1 style="font-size: 2em; text-align: center; color: #000; font-family: Arial; font-weight: 400">Card Deck for Persuasive Design Patterns</h1>
+						<div style = "text-align: center">
+								<button onclick = "location.href='index4.html';" class="dontknowButton"><strong>All Patterns</strong></button>
+
 						</div>
-						<h1><span>Card Deck for</span> UI Patterns</h1>
 					</header>
 
-			<!-- <div class="content color-1">
-				<h2 class="content__title">User Interface Design Patterns</h2>
-				<ul id="stack_UIdesignpatterns" class="stack stack--eka">
+			<div class="tabbing1">
+				<div class = "imageBox animsition-link1">
+      		<div class = "imageDefault">
+      			<img class = "tabimg" src="./tabimg/persuasivedefault.png" alt="persuasivedefault">
+      		</div>
+	      	<div class="imageHover">
+	      		<img class = "tabimg" src="./tabimg/persuasivedefault.png" alt="persuasivedefault">
+	      	</div>
+    	</div>
+			</div>
+
+			<div class="tabbing2">
+				<div class = "imageBox animsition-link2">
+      		<div class = "imageDefault">
+      			<a href="./yellowindex.html" class="animsition-link1"><img class = "tabimg" src="./tabimg/UIhover.png" alt="UIhover"></a>
+      		</div>
+      	<div class="imageHover">
+      		<a href="./yellowindex.html" class="animsition-link2"><img class = "tabimg" src="./tabimg/UIdefault.png" alt="UIdefault"></a>
+      	</div>
+    	</div>
+		</div>
+	</div>
+				<!-- <ul id="stack_UIdesignpatterns" class="stack stack--eka"> -->
 					<!-- getting input -->
 					<!-- <li class="stack__item"><img src="img/smallcard/Getting Input.png" alt="Input" /></li> -->
 					<!-- form -->
@@ -74,24 +100,30 @@
 				<div class="controls">
 					<button class="button button--sonar button--reject" data-stack="stack_UIdesignpatterns"><i class="fa fa-times"></i><span class="text-hidden">Reject</span></button>
 					<button class="button button--sonar button--accept" data-stack="stack_UIdesignpatterns"><i class="fa fa-check"></i><span class="text-hidden">Accept</span></button>
+				</div>-->
+
+
+			<!-- <div class="fullrow color-2">
+				<div  style= "display:flex;">
+							<h2 class="content__title">Persuasive Design Patterns</h2>
+
+							<button style = "display: inline;" onclick = "location.href='yellowindex.html';" ><strong>UI Patterns</strong></button>
 				</div>
-			</div> -->
+			<div> -->
+			<div class="fullrow color-2">
 
-
-			<div class="content color-2">
-				<h2 class="content__title">Persuasive Design Patterns</h2>
 				<ul id="stack_Persuasivedesignpatterns" class="stack stack--eka">
 					<!-- cognition -->
-					<li class="stack__item"><img src="img/smallcardblue/cognition.png" alt="cognition" /></li>
+					<li class="stack__item"  onclick = "location.href='./subpage.html';"><img src="img/smallcardblue/cognition.png" alt="cognition" /></li>
 					<!-- loss aversion -->
-					<li class="stack__item"><img src="img/smallcardblue/lossaversion.png" alt="loss aversion" /></li>
-					<li class="stack__item"><img src="img/smallcardblue/cog1.png" alt="cog1" /></li>
-					<li class="stack__item"><img src="img/smallcardblue/cog2.png" alt="cog2" /></li>
-					<li class="stack__item"><img src="img/smallcardblue/cog3.png" alt="cog3" /></li>
-					<li class="stack__item"><img src="img/smallcardblue/cog4.png" alt="cog4" /></li>
-					<li class="stack__item"><img src="img/smallcardblue/cog5.png" alt="cog5" /></li>
-					<li class="stack__item"><img src="img/smallcardblue/cog6.png" alt="cog6" /></li>
-					<li class="stack__item"><img src="img/smallcard/Good1.png" alt="Good1" /></li>
+					<li class="stack__item" onclick = "location.href='./html/lossaversion.html';"><img src="img/smallcardblue/lossaversion.png" alt="loss aversion" /></li>
+					<li class="stack__item" onclick = "location.href='./html/lossaversion.html';"><img src="img/smallcardblue/cog1.png" alt="cog1" /></li>
+					<li class="stack__item" onclick = "location.href='./subpage.html';"><img src="img/smallcardblue/cog2.png" alt="cog2" /></li>
+					<li class="stack__item" onclick = "location.href='./subpage.html';"><img src="img/smallcardblue/cog3.png" alt="cog3" /></li>
+					<li class="stack__item" onclick = "location.href='./subpage.html';"><img src="img/smallcardblue/cog4.png" alt="cog4" /></li>
+					<li class="stack__item" onclick = "location.href='./subpage.html';"><img src="img/smallcardblue/cog5.png" alt="cog5" /></li>
+					<li class="stack__item" onclick = "location.href='./subpage.html';"><img src="img/smallcardblue/cog6.png" alt="cog6" /></li>
+					<li class="stack__item" onclick = "location.href='./subpage.html';"><img src="img/smallcard/Good1.png" alt="Good1" /></li>
 					<!-- Other Cognitive Biases -->
 					<!-- <li class="stack__item"><img src="img/smallcardblue/othercognitivebiases.png" alt="other cognitive biases" /></li>
 					<li class="stack__item"><img src="img/smallcardblue/cog7.png" alt="cog7" /></li>
@@ -218,25 +250,28 @@
 				document.querySelector('.button--reject[data-stack = stack_Persuasivedesignpatterns]').addEventListener('click', krisnareject);
 
 					function krisnareject() {
-
-						var itemimg = document.getElementsByClassName("stack__item--current")[0].children[0].src;
-						console.log(itemimg);
-						// var addedItem = {
-						// 	itemImgSrc: itemimg
-						// }
+						var imglink = document.getElementsByClassName("stack__item--current")[0].getAttribute('onclick');
+						var imgsrc = document.getElementsByClassName("stack__item--current")[0].children[0].src;
+						var itemimg = {
+							imageLink: imglink,
+							imageSrc: imgsrc
+						};
+						// // console.log(itemimg);
+						console.log('itemimgLink  ' + itemimg.imageLink);
+						// 	console.log('imgsrc  ' + itemimg.imageSrc);
+						// 		console.log('imglink  ' + itemimg.imageLink);
 						var flagitem = false;
      				let items = getItemsFromStorage();
 						for(var i = 0; i < items.length; i++ ){
-							console.log(items[i] + itemimg)
-							if(items[i] === itemimg){
+							if(items[i].imageSrc === itemimg.imageSrc){
 									flagitem = true;
 							}
 						}
+
 						if(flagitem === false ){
 								items.push(itemimg);
 						}
-							console.log(itemimg)
-						console.log(items);
+
     			  localStorage.setItem('items',  JSON.stringify(items));
 						krisna.reject(buttonClickCallback.bind(this));
 
