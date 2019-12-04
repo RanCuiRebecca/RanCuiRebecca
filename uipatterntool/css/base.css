@@ -236,7 +236,6 @@ a:focus {
 
 .grid {
 	display: grid;
-	width: 100%;
 	height: auto;
 	--cell-number: 12;
 	--cell-size: 8.3333vw;
@@ -304,9 +303,9 @@ a:focus {
 	background: rgba(255,255,255,0.5);
 }
 
-@media screen and (max-width: 500px){}
+/* @media screen and (max-width: 500px){} */
 
-@media screen and (min-width: 53em) {
+/* @media screen and (min-width: 53em) { */
 	body {
 		overflow: hidden;
 	}
@@ -371,4 +370,3 @@ a:focus {
 		height: 100vh;
 		overflow: hidden;
 	}
-}
