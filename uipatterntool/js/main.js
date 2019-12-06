@@ -65,14 +65,14 @@
 		// callback: when reaching the end of the stack
 
 		onEndStack : function() {
-      var ItemContainer = document.getElementsByClassName('controls')[0]
+      var ItemContainer = document.getElementsByClassName('control')[0]
       console.log(ItemContainer);
       var seeFalsePatterns = document.createElement('div');
       // ItemContainer.innerHTML = `
       //   <a href = "./allcardsyellow.html" class="seeallpatterns"><strong>Patterns I don't knows</strong></a>
       // `
       // return false;
-      ItemContainer.innerHTML = `<a href = "./bluereinforce.html" class="dontknowButton"><strong>Patterns I don't knows</strong></a>`
+      ItemContainer.innerHTML = `<a href = "./bluereinforce.html" class="dontknowButton"><strong>Into the unknown</strong></a>`
       // ItemContainer.appendChild(seeFalsePatterns);
     },
 		// animation settings for the items' movements in the stack when the items rearrange

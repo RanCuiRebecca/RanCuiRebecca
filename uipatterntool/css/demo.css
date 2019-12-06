@@ -307,7 +307,7 @@ box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.25);
 .dontknowButton{
 	background-color:#fff;
 	border-radius:28px;
-	display:inline-block;
+	display:inline;
 	cursor:pointer;
 	color:#777777;
 	font-family:Arial;
